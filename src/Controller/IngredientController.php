@@ -43,7 +43,6 @@ class IngredientController extends AbstractController
      * @param EntityManagerInterface $manager
      * @return Response
      */
-
     #[Route('/ingredient/nouveau', 'ingredient.new', methods:['GET', 'POST'])]
     public function new(
         Request $request,
@@ -74,7 +73,13 @@ class IngredientController extends AbstractController
         ]);
     }
 
-   
+/**
+     * This controller show a form witch edit an ingredient
+     *
+     * @param Request $request
+     * @param EntityManagerInterface $manager
+     * @return Response
+     */
     #[Route('/ingredient/edition/{id}', 'ingredient.edit', methods:['GET', 'POST'])]
     public function edit(Ingredient $ingredient, Request $request, EntityManagerInterface $manager): Response
     {
@@ -100,7 +105,13 @@ class IngredientController extends AbstractController
             ]);
         
     }
-
+    /**
+     * This controller allow us to delete an ingredient
+     *
+     * @param EntityManagerInterface $manager
+     * @param Recipe $recipe
+     * @return Response
+     */
     #[Route('/ingredient/suppression/{id}', 'ingredient.delete', methods:['GET'])]
     public function delete(EntityManagerInterface $manager, Ingredient $ingredient): Response
     {
