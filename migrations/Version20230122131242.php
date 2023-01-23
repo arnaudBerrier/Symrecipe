@@ -28,4 +28,5 @@ final class Version20230122131242 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->addSql('ALTER TABLE recipe DROP is_public');
     }
+
 }
