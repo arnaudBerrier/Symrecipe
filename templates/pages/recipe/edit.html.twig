@@ -58,6 +58,13 @@
        {{ form_errors(form.isFavorite) }}
 	   </div>
     </div>
+    <div class="form-check mt-4">
+      {{ form_label(form.isPublic) }}
+      {{ form_widget(form.isPublic) }}
+      <div class="form-error">
+       {{ form_errors(form.isPublic) }}
+	   </div>
+    </div>
     <div class="form-image">{{ form_row(form.imageFile) }}</div>
     {{ form_label(form.ingredient) }}
 		<br>
