@@ -1,0 +1,22 @@
+#ingredients-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-image img{
+	width: 500px;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 94%;
+	position: relative;
+}
+.footer-page {
+	position:absolute;
+   bottom:0;  /* on le colle en bas */
+   width:100%;
+   height: 0;
+   
+}
